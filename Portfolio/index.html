@@ -1,0 +1,88 @@
+
+<!DOCTYPE html>
+<html>
+<head>
+    <title>My Portfolio</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="script.js"></script>
+</head>
+<body>
+
+<header>
+    <h1>My Portfolio</h1>
+    <p id="typing"></p>
+    <button onclick="darkMode()">Dark Mode</button>
+</header>
+
+<nav>
+    <a href="#about">About</a>
+    <a href="#skills">Skills</a>
+    <a href="#projects">Projects</a>
+    <a href="#contact">Contact</a>
+</nav>
+
+<section id="about">
+    <h2>About Me</h2>
+    <img src="profile.jpeg" class="profile">
+    <p>Hello, I am a Computer Engineering Student.</p>
+
+    <a href="resume.pdf" download>
+        <button>Download Resume</button>
+    </a>
+</section>
+
+<section id="skills">
+    <h2>My Skills</h2>
+
+    <p>Basic Python</p>
+    <div class="bar"><div class="fill" style="width:40%"></div></div>
+
+    <p>UI/Ux Design </p>
+    <div class="bar"><div class="fill" style="width:90%"></div></div>
+
+    <p>C Programming</p>
+    <div class="bar"><div class="fill" style="width:80%"></div></div>
+
+    <p>Java</p>
+    <div class="bar"><div class="fill" style="width:50%"></div></div>
+
+    <p>HTML CSS</p>
+    <div class="bar"><div class="fill" style="width:90%"></div></div>
+
+</section>
+
+<section id="projects">
+    <h2>My Projects</h2>
+
+    <div class="card">
+        <img src="p1.jpeg" width="100%">
+        <p>Student Management System</p>
+    </div>
+
+    <div class="card">
+        <img src="p2.jpg" width="100%">
+        <p>Online Food Website</p>
+    </div>
+
+</section>
+
+<section id="contact">
+    <h2>Contact Me</h2>
+
+    <form onsubmit="return validateForm()">
+        <input type="text" id="name" placeholder="Enter Name"><br><br>
+        <input type="email" id="email" placeholder="Enter Email"><br><br>
+        <textarea placeholder="Enter Message"></textarea><br><br>
+        <input type="submit" value="Send">
+    </form>
+
+</section>
+
+
+
+<footer>
+    <p>© 2026 My Portfolio</p>
+</footer>
+
+</body>
+</html>
